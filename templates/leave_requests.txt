@@ -1,0 +1,9 @@
+Hi [Manager],
+
+I’d like to request leave from {start_date} to {end_date}. 
+I’ve checked my schedule and there are no conflicts with key deadlines.
+
+Please let me know if this works.
+
+Thanks,  
+[Your Name]

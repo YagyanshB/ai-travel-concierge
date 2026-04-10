@@ -1,5 +1,13 @@
 import os
+from dotenv import load_dotenv
+
+load_dotenv()  # must run before getenv
+
 from openai import OpenAI
+
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 

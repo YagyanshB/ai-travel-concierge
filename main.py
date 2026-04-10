@@ -1,4 +1,5 @@
 import json
+import os
 from agent.budget import can_afford_trip
 from agent.planner import pick_dates, generate_basic_plan
 from agent.llm import generate_trip_summary
@@ -9,7 +10,10 @@ def load_finances():
         return json.load(f)
 
 def load_template():
-    with open("templates/leave_request.txt") as f:
+    base_dir = os.path.dirname(__file__)
+    path = os.path.join(base_dir, "templates/leave_requests.txt")
+
+    with open(path) as f:
         return f.read()
 
 def main():
